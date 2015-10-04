@@ -1,7 +1,7 @@
 import sendgrid
 import sys
 
-sg = sendgrid.SendGridClient('chsahit', 'sahit1998')
+sg = sendgrid.SendGridClient('chsahit', 'sahitpassword1')
 
 message = sendgrid.Mail()
 message.add_to('Sahit C <chsahit@gmail.com>')
