@@ -190,7 +190,9 @@ public:
 					if (max_pitch > max_roll && max_pitch > max_yaw) {
 						std::cout << "pitch\n"; gestures += "pitch";
 					}
-					std::cin.get();
+					//std::cin.get();
+					double curr_time = time(NULL);
+					while (time(NULL) - curr_time < 2);
 					max_roll = 0;
 					max_yaw = 0;
 					max_pitch = 0;
